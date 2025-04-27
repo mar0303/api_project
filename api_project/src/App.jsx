@@ -7,6 +7,7 @@ function App() {
   const [searchTerm, setSearchTerm] = useState(''); 
   const [countries, setCountries] = useState([]);
   const [error, setError] = useState(null);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     async function fetchCountries() {
@@ -30,7 +31,7 @@ function App() {
   return (
     <div className="container"> 
     <h1>Länder und Hauptstädte</h1>
-    <ul>
+    <ul className="country-list">
       {countries.map((country)=> (
         <li key= {country.cca3}>
            <h2>{country.name.common} </h2>
