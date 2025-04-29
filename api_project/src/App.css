@@ -1,32 +1,52 @@
 .container {
-    padding: 20px; 
-    max-width: 1600px; 
+    padding: 20px;
+    max-width: 1600px;
     margin: 0 auto;
-    display:block; 
-}
-.country-list { 
-    display: grid; 
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px; 
-} 
-h1 {
-    text-align: center; 
-    font-weight: bold; 
-    color:palevioletred;
-    margin-bottom: 25px; 
-} 
-li {
-    text-align: center; 
-    border-radius: 8px; 
-    padding: 15px; 
-    color: darkblue; 
-}
-.country-flag { 
-    width: 160px; 
-    height: 90px; 
-    object-fit: cover; 
-    border-radius: 8px; 
-    margin: 10px; 
-    border: 2px solid darkslateblue; 
+    display: block;
 }
 
+.country-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+    color: palevioletred;
+    margin-bottom: 25px;
+}
+
+li {
+    text-align: center;
+    border-radius: 8px;
+    padding: 15px;
+    color: darkblue;
+}
+
+.country-flag {
+    width: 160px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 10px;
+    border: 2px solid darkslateblue;
+}
+
+.search-input {
+    position: static;
+    margin: 10px auto;
+    display: block;
+    padding: 10px;
+    width: 250px;
+    border: 1px solid palevioletred;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Ändert die Rahmenfarbe beim Fokussieren */
+.search-input:focus {
+    border-color: darkslateblue;
+    outline: none; /* Entfernt den Standard-Browser-Umriss */
+}
